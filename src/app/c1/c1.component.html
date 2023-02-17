@@ -1,0 +1,13 @@
+<p>c1 works!</p>
+
+<h4>{{ messaggio }}</h4> <!-- Angular interpolation -->
+
+<label>Prova: <input type="text" [value]="provaVar"></label> <!-- property binding -->
+
+<input type="button" value="premi" (click)="clickHandler()"> <!-- event binding -->
+
+<div *ngIf="state"> <!-- Angular if directive-->
+    <span>
+        STATE is true
+    </span>
+</div>
