@@ -4,7 +4,7 @@
 
 <label>Prova: <input type="text" [value]="provaVar"></label> <!-- property binding -->
 
-<input type="button" value="premi" (click)="clickHandler()"> <!-- event binding -->
+<input type="button" value="premi" (click)="clickHandler($event)"> <!-- event binding -->
 
 <div *ngIf="state"> <!-- Angular if directive-->
     <span>

@@ -23,7 +23,11 @@ export class C1Component {
   }
 
   state = true;
-  clickHandler(){
+  clickHandler(event: any){
+    console.log(event)
+    const labelDelBottone = event.target.value;
+    console.log(labelDelBottone);
+
     this.messaggio = "Premuto bottone";
     this.provaVar = (this.state) ? this.provaVar.toLowerCase() : this.provaVar.toUpperCase();
     this.state = !this.state;
